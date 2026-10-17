@@ -1,0 +1,1225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ProMail.lk — Business email, made personal | Managed .LK Email by Peek Hosting</title>
+  <meta name="description" content="Get your official .LK domain bundled with reliable, high-deliverability business email. Fully configured by Peek Hosting Sri Lanka. No technical headaches." />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@600&family=Geist+Mono:wght@400;500;600&family=Geist:wght@400;500;600;700&family=Instrument+Serif:ital@0;1&family=Noto+Sans+Sinhala:wght@500;600&family=Noto+Sans+Tamil:wght@500;600&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <!-- Accessible Skip Link -->
+  <a href="#main" class="skip">Skip to main content</a>
+
+  <!-- Global SVG Sprite for Icons (No emoji icons, sharp SVG vector system) -->
+  <svg class="sprite" aria-hidden="true">
+    <symbol id="i-check" viewBox="0 0 24 24">
+      <polyline points="20 6 9 17 4 12"></polyline>
+    </symbol>
+    <symbol id="i-x" viewBox="0 0 24 24">
+      <line x1="18" y1="6" x2="6" y2="18"></line>
+      <line x1="6" y1="6" x2="18" y2="18"></line>
+    </symbol>
+    <symbol id="i-arrow-r" viewBox="0 0 24 24">
+      <line x1="5" y1="12" x2="19" y2="12"></line>
+      <polyline points="12 5 19 12 12 19"></polyline>
+    </symbol>
+    <symbol id="i-phone" viewBox="0 0 24 24">
+      <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"></path>
+    </symbol>
+    <symbol id="i-shield" viewBox="0 0 24 24">
+      <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+    </symbol>
+    <symbol id="i-copy" viewBox="0 0 24 24">
+      <rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect>
+      <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path>
+    </symbol>
+    <symbol id="i-search" viewBox="0 0 24 24">
+      <circle cx="11" cy="11" r="8"></circle>
+      <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+    </symbol>
+    <symbol id="i-chevron-down" viewBox="0 0 24 24">
+      <polyline points="6 9 12 15 18 9"></polyline>
+    </symbol>
+    <symbol id="i-mail" viewBox="0 0 24 24">
+      <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+      <polyline points="22,6 12,13 2,6"></polyline>
+    </symbol>
+    <symbol id="i-clock" viewBox="0 0 24 24">
+      <circle cx="12" cy="12" r="10"></circle>
+      <polyline points="12 6 12 12 16 14"></polyline>
+    </symbol>
+    <symbol id="i-building" viewBox="0 0 24 24">
+      <rect x="4" y="2" width="16" height="20" rx="2" ry="2"></rect>
+      <line x1="9" y1="22" x2="9" y2="22.01"></line>
+      <line x1="15" y1="22" x2="15" y2="22.01"></line>
+      <line x1="9" y1="6" x2="9" y2="6.01"></line>
+      <line x1="15" y1="6" x2="15" y2="6.01"></line>
+      <line x1="9" y1="10" x2="9" y2="10.01"></line>
+      <line x1="15" y1="10" x2="15" y2="10.01"></line>
+      <line x1="9" y1="14" x2="9" y2="14.01"></line>
+      <line x1="15" y1="14" x2="15" y2="14.01"></line>
+      <line x1="9" y1="18" x2="9" y2="18.01"></line>
+      <line x1="15" y1="18" x2="15" y2="18.01"></line>
+    </symbol>
+  </svg>
+
+  <!-- Reading Progress Bar -->
+  <div class="progress" aria-hidden="true"><span id="progressBar"></span></div>
+
+  <!-- Announcement & Infrastructure Status Ribbon -->
+  <div class="announce">
+    <div class="container announce__inner">
+      <div class="announce__text">
+        <span class="live-dot" aria-hidden="true"></span>
+        <span>
+          <strong class="announce__brand">Peek Hosting (Pvt) Ltd:</strong>
+          <span>Accredited .LK Registry Partner • Colombo NVMe Cluster Active</span>
+        </span>
+      </div>
+      <div class="announce__right">
+        <a href="tel:+94117112244" class="announce__phone">
+          <svg class="i"><use href="#i-phone"></use></svg>
+          <span class="tnum">+94 11 711 2244</span>
+        </a>
+        <div class="seg seg--dark" id="currencyToggleTop" role="group" aria-label="Currency selector">
+          <span class="seg__thumb" aria-hidden="true"></span>
+          <button type="button" class="seg__btn is-active" data-currency="LKR">LKR</button>
+          <button type="button" class="seg__btn" data-currency="USD">USD</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Sticky Site Header -->
+  <header class="header" id="header">
+    <div class="container header__inner">
+      <a href="#" class="logo" aria-label="ProMail.lk homepage">
+        <svg viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <rect width="32" height="32" rx="8" fill="#1F48D6"/>
+          <path d="M7 10L16 16.5L25 10" stroke="white" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
+          <rect x="7" y="10" width="18" height="13" rx="2.5" stroke="white" stroke-width="2.2"/>
+        </svg>
+        <span class="logo__text">
+          ProMail<span class="logo__tld">.lk</span>
+          <span class="logo__by">by Peek Hosting</span>
+        </span>
+      </a>
+
+      <nav class="nav" aria-label="Primary navigation">
+        <a href="#how" class="nav__link">How It Works</a>
+        <a href="#features" class="nav__link">The .LK Edge</a>
+        <a href="#compare" class="nav__link">Compare Costs</a>
+        <a href="#pricing" class="nav__link">Pricing Plans</a>
+        <a href="#rules" class="nav__link">.LK Rules</a>
+        <a href="#faq" class="nav__link">FAQ</a>
+      </nav>
+
+      <div class="header__actions">
+        <a href="https://mail.promail.lk" target="_blank" rel="noopener" class="btn btn-ghost btn-sm hide-xs">Webmail Sign In</a>
+        <button type="button" class="btn btn-primary btn-sm open-drawer" data-plan="Business .LK">
+          <span>Claim Your .LK</span>
+          <svg class="i arrow" aria-hidden="true"><use href="#i-arrow-r"></use></svg>
+        </button>
+        <button type="button" class="burger" id="burgerBtn" aria-label="Toggle navigation menu" aria-expanded="false">
+          <span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Drawer Menu -->
+  <div class="mobile-menu" id="mobileMenu" aria-hidden="true">
+    <div class="mobile-menu__links">
+      <a href="#how" style="--i: 0"><span>How It Works</span><svg class="i"><use href="#i-arrow-r"></use></svg></a>
+      <a href="#features" style="--i: 1"><span>The .LK Edge</span><svg class="i"><use href="#i-arrow-r"></use></svg></a>
+      <a href="#compare" style="--i: 2"><span>Cost Calculator</span><svg class="i"><use href="#i-arrow-r"></use></svg></a>
+      <a href="#pricing" style="--i: 3"><span>Pricing &amp; Bundles</span><svg class="i"><use href="#i-arrow-r"></use></svg></a>
+      <a href="#rules" style="--i: 4"><span>Registry Guidelines</span><svg class="i"><use href="#i-arrow-r"></use></svg></a>
+      <a href="#faq" style="--i: 5"><span>Frequently Asked Questions</span><svg class="i"><use href="#i-arrow-r"></use></svg></a>
+    </div>
+    <div class="mobile-menu__cta">
+      <a href="https://mail.promail.lk" target="_blank" rel="noopener" class="btn btn-ghost btn-lg">Webmail Sign In</a>
+      <button type="button" class="btn btn-primary btn-lg open-drawer" data-plan="Business .LK">
+        <span>Claim Your .LK Address</span>
+        <svg class="i arrow"><use href="#i-arrow-r"></use></svg>
+      </button>
+      <div class="mobile-menu__phone">
+        Colombo Support: <a href="tel:+94117112244" class="link">+94 11 711 2244</a>
+      </div>
+    </div>
+  </div>
+
+  <main id="main">
+    <!-- HERO SECTION -->
+    <section class="hero">
+      <div class="hero__bg" aria-hidden="true"></div>
+      <div class="container hero__grid">
+        <div class="hero__copy">
+          <div class="eyebrow">
+            <span>OFFICIAL .LK DOMAIN + BUSINESS EMAIL BUNDLE</span>
+          </div>
+
+          <h1 class="hero__title">
+            <span class="line"><span>Business email,</span></span>
+            <span class="line">
+              <span class="scribble">
+                <span class="accent">made personal.</span>
+                <svg viewBox="0 0 280 20" preserveAspectRatio="none" aria-hidden="true">
+                  <path d="M 4 15 Q 140 4 276 13 Q 138 18 8 16" />
+                </svg>
+              </span>
+            </span>
+          </h1>
+
+          <p class="lead hero__lead">
+            Stop sending client invoices and tender proposals from generic <code>@gmail.com</code> addresses. Get your official <strong>.lk domain</strong> bundled with ultra-fast business email—completely set up and backed by <strong>Peek Hosting Sri Lanka</strong>.
+          </p>
+
+          <!-- Live Interactive Composer -->
+          <div class="composer-wrap">
+            <div class="annotation" aria-hidden="true">
+              <span>Type your company name here</span>
+              <svg viewBox="0 0 46 40"><path d="M 4 4 C 18 12, 30 20, 24 36 M 24 36 L 16 30 M 24 36 L 30 28"></path></svg>
+            </div>
+
+            <form class="composer" id="composerForm" novalidate>
+              <div class="cfield cfield--user">
+                <label for="cUser">Your Name / Role</label>
+                <div class="cfield__wrap">
+                  <input type="text" id="cUser" value="kasun" maxlength="24" autocomplete="off" spellcheck="false" placeholder="kasun" />
+                </div>
+              </div>
+
+              <div class="cfield cfield--domain">
+                <label for="cDomain">Company / Brand Name</label>
+                <div class="cfield__wrap">
+                  <span class="cfield__at" aria-hidden="true">@</span>
+                  <input type="text" id="cDomain" value="ceyloncraft" maxlength="32" autocomplete="off" spellcheck="false" placeholder="ceyloncraft" />
+                </div>
+              </div>
+
+              <div class="ctld">
+                <select id="cTld" aria-label="Select .LK Domain Extension">
+                  <option value=".lk" selected>.lk</option>
+                  <option value=".com.lk">.com.lk</option>
+                  <option value=".org.lk">.org.lk</option>
+                  <option value=".hotel.lk">.hotel.lk</option>
+                  <option value=".edu.lk">.edu.lk</option>
+                </select>
+                <svg class="i" aria-hidden="true"><use href="#i-chevron-down"></use></svg>
+              </div>
+
+              <button type="submit" class="btn btn-primary composer__submit" id="composerSubmit">
+                <span>Verify &amp; Bundle</span>
+                <svg class="i arrow" aria-hidden="true"><use href="#i-arrow-r"></use></svg>
+              </button>
+            </form>
+
+            <div class="composer-hint" id="composerHint">
+              <strong>ceyloncraft.lk</strong> is available for instant registration under your NIC or BR.
+            </div>
+
+            <div class="examples">
+              <span>Try sample profiles:</span>
+              <button type="button" class="chip is-active" data-user="kasun" data-domain="ceyloncraft" data-tld=".lk" data-name="Kasun Perera" data-role="Managing Director">Ceylon Craft</button>
+              <button type="button" class="chip" data-user="reservations" data-domain="ahangamavilla" data-tld=".lk" data-name="Roshan de Silva" data-role="General Manager">Ahangama Villa</button>
+              <button type="button" class="chip" data-user="chambers" data-domain="pereralaw" data-tld=".lk" data-name="Sanjaya Perera" data-role="Senior Counsel">Perera Law</button>
+              <button type="button" class="chip" data-user="exports" data-domain="kandyspice" data-tld=".com.lk" data-name="Dilhan Wijeratne" data-role="Head of Exports">Kandy Spice</button>
+            </div>
+          </div>
+
+          <ul class="hero__facts">
+            <li><svg class="i"><use href="#i-check"></use></svg><span>100% Legal .LK Domain Ownership</span></li>
+            <li><svg class="i"><use href="#i-check"></use></svg><span>Zero DNS / MX configuration required</span></li>
+            <li><svg class="i"><use href="#i-check"></use></svg><span>Flat annual Rupee (LKR) pricing</span></li>
+          </ul>
+        </div>
+
+        <!-- Hero Visual: Live Mail Preview & Automated Provisioning Stage -->
+        <div class="hero__visual">
+          <div class="mail" id="liveMailCard">
+            <div class="mail__top">
+              <div class="mail__title">Client Inbox Preview</div>
+              <div class="mail__tools">
+                <span class="mail__secure"><svg class="i"><use href="#i-shield"></use></svg><span>DKIM 2048-Bit</span></span>
+                <button type="button" class="mail__copy" id="copyLiveEmailBtn" title="Copy email address">
+                  <svg class="i"><use href="#i-copy"></use></svg>
+                  <span>Copy</span>
+                </button>
+              </div>
+            </div>
+
+            <div class="mail__row">
+              <span class="mail__k">From:</span>
+              <div class="mail__v">
+                <div class="avatar" id="liveAvatar">KP</div>
+                <div class="mail__from">
+                  <span id="liveSenderName">Kasun Perera</span>
+                  <span class="addr" id="liveSenderEmail">&lt;kasun@ceyloncraft.lk&gt;</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="mail__row">
+              <span class="mail__k">To:</span>
+              <div class="mail__v">
+                <span class="addr addr--muted">procurement@keells-export.lk</span>
+              </div>
+            </div>
+
+            <div class="mail__row">
+              <span class="mail__k">Subject:</span>
+              <div class="mail__v">
+                <span class="mail__subject">Commercial Invoice #INV-2026-44 &amp; Export Schedule</span>
+              </div>
+            </div>
+
+            <div class="mail__body">
+              <p>Dear Procurement Team,</p>
+              <p>Please find attached our finalized commercial proforma invoice and phytosanitary dispatch schedule from <strong id="liveBodyCompany">Ceylon Craft</strong>.</p>
+
+              <div class="attach">
+                <div class="attach__icon">PDF</div>
+                <div>
+                  <span class="attach__name" id="livePdfName">Commercial_Invoice_CeylonCraft.pdf</span>
+                  <span class="attach__size">480 KB • Digitally Signed</span>
+                </div>
+              </div>
+
+              <div class="sig">
+                <div class="sig__mark" id="liveSigMark">CC</div>
+                <div>
+                  <span class="sig__name" id="liveSigName">Kasun Perera — Managing Director</span>
+                  <span class="sig__meta" id="liveSigMeta">kasun@ceyloncraft.lk • www.ceyloncraft.lk</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Live Provisioning Simulator -->
+            <div class="mail__setup">
+              <div class="setup__head">
+                <span>Automated Deployment Status (<strong id="liveSetupDomain">ceyloncraft.lk</strong>)</span>
+                <span class="setup__status" id="setupStatusBadge" data-state="ok">Active</span>
+              </div>
+              <div class="setup__bar" aria-hidden="true"><span id="setupProgressBar"></span></div>
+              <div class="setup__list">
+                <div class="setup__item is-done" id="stepDns"><span class="setup__icon"></span><span>MX &amp; rDNS Configured</span></div>
+                <div class="setup__item is-done" id="stepSpf"><span class="setup__icon"></span><span>SPF Alignment Passed</span></div>
+                <div class="setup__item is-done" id="stepDkim"><span class="setup__icon"></span><span>DKIM 2048-Bit Signed</span></div>
+                <div class="setup__item is-done" id="stepDmarc"><span class="setup__icon"></span><span>DMARC Quarantine Active</span></div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Floating Badges -->
+          <div class="float float--a" aria-hidden="true">
+            <div class="float__icon float__icon--green"><svg class="i"><use href="#i-check"></use></svg></div>
+            <div>
+              <strong>10/10 Mail-Tester Score</strong>
+              <span class="float__sub">Direct to client Primary Inbox</span>
+            </div>
+          </div>
+
+          <div class="float float--b" aria-hidden="true">
+            <div class="float__icon float__icon--brand"><svg class="i"><use href="#i-shield"></use></svg></div>
+            <div>
+              <strong>Peek Hosting Guarantee</strong>
+              <span class="float__sub">99.99% Node Uptime SLA</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- MARQUEE SECTION: SRI LANKAN INDUSTRIES -->
+    <section class="clients" aria-label="Trusted industries">
+      <div class="container clients__inner">
+        <div class="clients__label">
+          Trusted by growing businesses, studios &amp; exporters across Sri Lanka:
+        </div>
+        <div class="marquee">
+          <div class="marquee__track" id="marqueeTrack">
+            <div class="marquee__item"><svg class="i"><use href="#i-building"></use></svg><span>Specialty Tea &amp; Cinnamon Exporters</span></div>
+            <div class="marquee__item"><svg class="i"><use href="#i-building"></use></svg><span>Southern Boutique Hotels &amp; Villas</span></div>
+            <div class="marquee__item"><svg class="i"><use href="#i-building"></use></svg><span>Colombo Law Chambers &amp; Notaries</span></div>
+            <div class="marquee__item"><svg class="i"><use href="#i-building"></use></svg><span>Architecture &amp; Interior Studios</span></div>
+            <div class="marquee__item"><svg class="i"><use href="#i-building"></use></svg><span>Freight Forwarding &amp; Logistics Hubs</span></div>
+            <div class="marquee__item"><svg class="i"><use href="#i-building"></use></svg><span>Manufacturing &amp; Engineering SMEs</span></div>
+            <!-- Duplicate for seamless infinite marquee loop -->
+            <div class="marquee__item" aria-hidden="true"><svg class="i"><use href="#i-building"></use></svg><span>Specialty Tea &amp; Cinnamon Exporters</span></div>
+            <div class="marquee__item" aria-hidden="true"><svg class="i"><use href="#i-building"></use></svg><span>Southern Boutique Hotels &amp; Villas</span></div>
+            <div class="marquee__item" aria-hidden="true"><svg class="i"><use href="#i-building"></use></svg><span>Colombo Law Chambers &amp; Notaries</span></div>
+            <div class="marquee__item" aria-hidden="true"><svg class="i"><use href="#i-building"></use></svg><span>Architecture &amp; Interior Studios</span></div>
+            <div class="marquee__item" aria-hidden="true"><svg class="i"><use href="#i-building"></use></svg><span>Freight Forwarding &amp; Logistics Hubs</span></div>
+            <div class="marquee__item" aria-hidden="true"><svg class="i"><use href="#i-building"></use></svg><span>Manufacturing &amp; Engineering SMEs</span></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- HOW IT WORKS (3 SIMPLE STEPS) -->
+    <section class="section" id="how">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="eyebrow">EFFORTLESS PROVISIONING</span>
+          <h2 class="h2">Setting up a corporate <code>.lk</code> email used to take 5 days. <span class="accent">We made it take 60 seconds.</span></h2>
+          <p class="lead">No navigating through manual nameserver delegations, confusing TXT record formatting, or separated invoices. We take care of everything from start to finish.</p>
+        </div>
+
+        <div class="steps" id="stepsContainer">
+          <!-- Step 1 -->
+          <div class="step reveal" style="--d: 0">
+            <div class="step__num">01</div>
+            <div>
+              <h3>Choose Your Identity</h3>
+              <p>Type your business name and desired department mailboxes. Pick between <code>.lk</code>, <code>.com.lk</code>, <code>.hotel.lk</code>, or <code>.org.lk</code>.</p>
+              <div class="step__art art-search">
+                <div class="art-search__field">
+                  <svg class="i"><use href="#i-search"></use></svg>
+                  <span class="addr" id="step1DomainPreview">ceyloncraft.lk</span>
+                  <span class="caret" aria-hidden="true"></span>
+                </div>
+                <ul class="art-search__list">
+                  <li><span class="addr">ceyloncraft.lk</span><span class="pill pill--green">Available</span></li>
+                  <li><span class="addr">ceyloncraft.com.lk</span><span class="pill pill--green">Available</span></li>
+                  <li><span class="addr">ceyloncraft.hotel.lk</span><span class="pill">Specialized</span></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <!-- Step 2 -->
+          <div class="step reveal" style="--d: 1">
+            <div class="step__num">02</div>
+            <div>
+              <h3>Registry Processing &amp; DNS</h3>
+              <p>Peek Hosting files the official LK Domain Registry paperwork under your personal NIC or Business BR. Our Colombo team handles 100% of the DNS.</p>
+              <div class="step__art art-doc">
+                <div class="doc">
+                  <div class="doc__title">LK Domain Registry Record</div>
+                  <div class="doc__row"><span>Registrant:</span><b id="step2CompanyPreview">Ceylon Craft</b></div>
+                  <div class="doc__row"><span>Category:</span><b>Standard Commercial (.LK)</b></div>
+                  <div class="doc__row"><span>DNS Security:</span><b>Automated (Peek Hosting)</b></div>
+                  <div class="doc__lines"><i aria-hidden="true"></i><i aria-hidden="true"></i><i aria-hidden="true"></i></div>
+                  <div class="stamp-mark">APPROVED</div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Step 3 -->
+          <div class="step reveal" style="--d: 2">
+            <div class="step__num">03</div>
+            <div>
+              <h3>Instant Device Sync</h3>
+              <p>Open your mail immediately in Outlook, Apple Mail, or your phone's Gmail app. Send quotations with verified DKIM signatures that bypass spam filters.</p>
+              <div class="step__art art-phone">
+                <div class="phone">
+                  <div class="phone__notch" aria-hidden="true"></div>
+                  <div class="phone__notif">
+                    <div class="phone__app"><svg class="i"><use href="#i-mail"></use></svg></div>
+                    <div>
+                      <b>New Quotation Received</b>
+                      <span class="addr" id="step3EmailPreview">kasun@ceyloncraft.lk</span>
+                    </div>
+                  </div>
+                  <div class="phone__lines"><i aria-hidden="true"></i><i aria-hidden="true"></i><i aria-hidden="true"></i><i aria-hidden="true"></i></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- BENTO GRID: THE PROMAIL.LK ADVANTAGE -->
+    <section class="section section--tint" id="features">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="eyebrow">LOCAL INFRASTRUCTURE ADVANTAGE</span>
+          <h2 class="h2">Engineered specifically for how <span class="accent">Sri Lanka does business.</span></h2>
+          <p class="lead">International corporate email providers charge in volatile US Dollars per user and leave you to figure out local domain administration on your own.</p>
+        </div>
+
+        <div class="bento">
+          <!-- Bento 1: Legal Ownership -->
+          <div class="card b-1 reveal">
+            <div class="card__copy">
+              <span class="pill">LEGAL INTEGRITY</span>
+              <h3>100% Domain Ownership in Your Legal Name</h3>
+              <p>Unlike third-party web agencies who register your domain under their personal accounts, Peek Hosting registers your <code>.lk</code> domain with you as the legal Registrant at the LK Domain Registry. Whether you use your personal NIC or company BR, you retain absolute administrative control.</p>
+            </div>
+            <div class="card__visual">
+              <div class="record">
+                <div>
+                  <span class="record__k">OFFICIAL REGISTRANT NAME</span>
+                  <span class="record__v" id="bentoRegistrantPreview">Ceylon Craft (Pvt) Ltd</span>
+                </div>
+                <div>
+                  <span class="record__k">REGISTRY VERIFICATION</span>
+                  <span class="record__v">NIC / BR Verified Partner</span>
+                </div>
+                <div class="stamp" aria-hidden="true">
+                  PEEK HOSTING<br/>ACCREDITED<br/>PARTNER
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Bento 2: Anti-Spam Security -->
+          <div class="card b-2 reveal">
+            <span class="pill">INBOX PLACEMENT</span>
+            <h3>Clean SmartHost Mail Relays</h3>
+            <p>Cheap shared hosting puts your email on dirty IPs shared with hundreds of unverified websites. We route outbound mail through dedicated, reputation-guarded relays.</p>
+            <div class="card__visual">
+              <div class="checks">
+                <div class="check-row is-pass">
+                  <span class="check-row__label">SPF Authentication</span>
+                  <span class="check-row__status"><span class="check-row__dot"></span><span>Pass</span></span>
+                </div>
+                <div class="check-row is-pass">
+                  <span class="check-row__label">DKIM 2048-Bit RSA</span>
+                  <span class="check-row__status"><span class="check-row__dot"></span><span>Aligned</span></span>
+                </div>
+                <div class="check-row is-pass">
+                  <span class="check-row__label">DMARC Enforcement</span>
+                  <span class="check-row__status"><span class="check-row__dot"></span><span>Protected</span></span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Bento 3: Trilingual Support -->
+          <div class="card b-3 reveal">
+            <span class="pill">HUMAN ASSISTANCE</span>
+            <h3>Colombo Support Desk</h3>
+            <p>Need to add a staff email on Monday morning or configure a director's MacBook? Talk directly with Sri Lankan support engineers.</p>
+            <div class="card__visual">
+              <div class="greet" id="trilingualGreet" aria-live="polite">
+                <span class="is-current" lang="en">"Good morning! How can we help?"</span>
+                <span lang="si">"සුබ උදෑසනක්! අපි උදව් කරන්නේ කෙසේද?"</span>
+                <span lang="ta">"காலை வணக்கம்! நாங்கள் எவ்வாறு உதவலாம்?"</span>
+              </div>
+              <div style="margin-top: 10px; font-size: 0.8125rem; color: var(--ink-3);">
+                Average first-response time: <strong>7 minutes</strong> on WhatsApp
+              </div>
+            </div>
+          </div>
+
+          <!-- Bento 4: Rupee Billing -->
+          <div class="card b-4 reveal">
+            <span class="pill">PREDICTABLE BUDGET</span>
+            <h3>Zero Dollar Rate Shocks</h3>
+            <p>Never worry about sudden currency depreciations or bank cross-border transaction fees. One flat yearly fee in Sri Lankan Rupees.</p>
+            <div class="card__visual">
+              <div class="invoice">
+                <span>Annual Tax Invoice:</span>
+                <b class="tnum" id="bentoInvoiceLkr">Rs. 14,900 / yr</b>
+              </div>
+              <div class="pay">
+                <span>LankaQR</span>
+                <span>Visa / MC</span>
+                <span>Bank Transfer</span>
+                <span>Sampath Vishwa</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Bento 5: Free Migration -->
+          <div class="card b-5 reveal">
+            <span class="pill">SEAMLESS SWITCH</span>
+            <h3>Free Legacy Mail Migration</h3>
+            <p>Moving from personal Gmail or Google Workspace? We copy your past emails, sent folders, and contacts over with zero downtime.</p>
+            <div class="card__visual">
+              <div class="migrate">
+                <span class="migrate__from" id="bentoMigrateFrom">ceyloncraft@gmail.com</span>
+                <svg class="i migrate__arrow"><use href="#i-arrow-r"></use></svg>
+                <span class="migrate__to" id="bentoMigrateTo">kasun@ceyloncraft.lk</span>
+                <div class="migrate__bar" aria-hidden="true"><span></span></div>
+                <div class="migrate__meta">
+                  <span>Syncing inbox folders...</span>
+                  <span style="color: var(--green); font-weight: 600;">100% Intact</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- INTERACTIVE COST & SAVINGS CALCULATOR -->
+    <section class="section" id="compare">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="eyebrow">TRANSPARENT ECONOMICS</span>
+          <h2 class="h2">Enterprise-grade corporate email <span class="accent">without the per-user USD tax.</span></h2>
+          <p class="lead">Slide to see how much your business keeps every single year by bundling your <code>.lk</code> domain and mailboxes with ProMail.lk instead of paying monthly per-user fees.</p>
+        </div>
+
+        <div class="calc reveal">
+          <div class="calc__top">
+            <div>
+              <div class="calc__label">
+                <span>How many staff email addresses do you need?</span>
+                <span class="calc__count" id="calcMailboxCount">5 Mailboxes</span>
+              </div>
+              <input type="range" class="range" id="calcSlider" min="1" max="25" value="5" aria-label="Mailbox quantity" />
+              <div class="calc__scale">
+                <span>1 (Solo)</span>
+                <span>5 (Small Team)</span>
+                <span>10 (Growing SME)</span>
+                <span>25 (Enterprise)</span>
+              </div>
+            </div>
+
+            <div class="saving">
+              <span class="saving__k">ESTIMATED ANNUAL SAVINGS RETAINED IN YOUR BUSINESS</span>
+              <div class="saving__v tnum" id="calcSavingsDisplay">Rs. 122,600 / yr</div>
+              <div class="saving__sub">compared to Google Workspace + separate .LK domain renewal</div>
+            </div>
+          </div>
+
+          <div class="calc__cols">
+            <!-- ProMail.lk -->
+            <div class="pcol pcol--us">
+              <span class="pcol__tag" id="calcTierBadge">Recommended: Business .LK Bundle</span>
+              <div class="pcol__name">ProMail.lk Bundle</div>
+              <div class="pcol__desc">Official .LK Domain + All Mailboxes Included</div>
+
+              <div class="pcol__price tnum" id="calcPromailPrice">Rs. 14,900 <small>/ yr total</small></div>
+              <div class="pcol__per" id="calcPromailPerMo">Equivalent to Rs. 248 / month per mailbox</div>
+
+              <ul class="pcol__list">
+                <li class="li li--yes"><svg class="i"><use href="#i-check"></use></svg><span><strong>Official .LK domain renewal included free</strong></span></li>
+                <li class="li li--yes"><svg class="i"><use href="#i-check"></use></svg><span>Flat yearly rate in LKR (Not per-user!)</span></li>
+                <li class="li li--yes"><svg class="i"><use href="#i-check"></use></svg><span>Free role aliases: <span class="addr">info@</span>, <span class="addr">accounts@</span></span></li>
+                <li class="li li--yes"><svg class="i"><use href="#i-check"></use></svg><span>Direct Peek Hosting WhatsApp &amp; phone support</span></li>
+              </ul>
+
+              <button type="button" class="btn btn-light open-drawer" data-plan="Business .LK">
+                <span>Claim This Bundle</span>
+                <svg class="i arrow"><use href="#i-arrow-r"></use></svg>
+              </button>
+            </div>
+
+            <!-- Google Workspace -->
+            <div class="pcol">
+              <span class="pcol__tag">Per-User USD Subscription</span>
+              <div class="pcol__name">Google Workspace Starter</div>
+              <div class="pcol__desc">$7.20 / user / month + Separate .LK Domain</div>
+
+              <div class="pcol__price tnum" id="calcGooglePrice">Rs. 137,500 <small>/ yr total</small></div>
+              <div class="pcol__per">~Rs. 2,200 / user / mo + separate Rs. 5,500 domain fee</div>
+
+              <ul class="pcol__list">
+                <li class="li li--no"><svg class="i"><use href="#i-x"></use></svg><span>.LK domain billed separately at NIC.lk</span></li>
+                <li class="li li--no"><svg class="i"><use href="#i-x"></use></svg><span>Billed in USD on credit card with bank FX taxes</span></li>
+                <li class="li li--no"><svg class="i"><use href="#i-x"></use></svg><span>Manual DNS, SPF and DKIM setup required</span></li>
+                <li class="li li--no"><svg class="i"><use href="#i-x"></use></svg><span>No direct telephone support in Sri Lanka</span></li>
+              </ul>
+            </div>
+
+            <!-- Microsoft 365 -->
+            <div class="pcol">
+              <span class="pcol__tag">Per-User USD Subscription</span>
+              <div class="pcol__name">Microsoft 365 Business Basic</div>
+              <div class="pcol__desc">$6.00 / user / month + Separate .LK Domain</div>
+
+              <div class="pcol__price tnum" id="calcMsftPrice">Rs. 115,900 <small>/ yr total</small></div>
+              <div class="pcol__per">~Rs. 1,840 / user / mo + separate Rs. 5,500 domain fee</div>
+
+              <ul class="pcol__list">
+                <li class="li li--no"><svg class="i"><use href="#i-x"></use></svg><span>.LK domain not included in package</span></li>
+                <li class="li li--no"><svg class="i"><use href="#i-x"></use></svg><span>Multiplied per user in US Dollars</span></li>
+                <li class="li li--no"><svg class="i"><use href="#i-x"></use></svg><span>Complex Azure / Entra admin console</span></li>
+                <li class="li li--no"><svg class="i"><use href="#i-x"></use></svg><span>No local LKR LankaQR or bank transfer invoicing</span></li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="calc__foot">
+            * Benchmark based on Google Workspace Starter ($7.20/user/mo) and Microsoft 365 Business Basic ($6.00/user/mo) converted at current commercial card exchange rates (~305 LKR/USD + 3.5% foreign transaction fee) plus standard annual .LK domain renewal fee.
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PRICING PACKAGES -->
+    <section class="section section--tint" id="pricing">
+      <div class="container">
+        <div class="section-head section-head--split reveal">
+          <div>
+            <span class="eyebrow">ALL-IN-ONE ANNUAL PLANS</span>
+            <h2 class="h2">Simple, transparent pricing. <span class="accent">Your .LK domain is on us.</span></h2>
+            <p class="lead">Every plan includes your official domain registration, high-speed NVMe storage, spam protection, and complete Colombo engineering setup.</p>
+          </div>
+
+          <!-- Billing Cycle Segmented Control -->
+          <div class="seg" id="billingCycleToggle" role="group" aria-label="Billing cycle toggle">
+            <span class="seg__thumb" aria-hidden="true"></span>
+            <button type="button" class="seg__btn is-active" data-cycle="1">1-Year Plan</button>
+            <button type="button" class="seg__btn" data-cycle="2">
+              <span>2-Year Plan</span>
+              <span class="seg__save">Save 15%</span>
+            </button>
+          </div>
+        </div>
+
+        <div class="pricing">
+          <!-- Tier 1: Starter .LK -->
+          <div class="price reveal" style="--d: 0">
+            <div class="price__name">Starter .LK</div>
+            <div class="price__desc">For solo founders, consultants &amp; freelancers building their independent brand.</div>
+
+            <div class="price__amount">
+              <span class="price__num tnum" data-price-lkr-1="Rs. 6,900" data-price-lkr-2="Rs. 5,850" data-price-usd-1="$23" data-price-usd-2="$19">Rs. 6,900</span>
+              <span class="price__per">/ year</span>
+            </div>
+            <div class="price__note">Renews at the same flat annual rate</div>
+
+            <div class="price__domain">
+              <svg class="i"><use href="#i-shield"></use></svg>
+              <span>Includes FREE <strong>.lk</strong> or <strong>.com.lk</strong> domain</span>
+            </div>
+
+            <ul class="price__list">
+              <li class="li li--yes"><svg class="i"><use href="#i-check"></use></svg><span><strong>2 Professional Mailboxes</strong> (e.g. you + info@)</span></li>
+              <li class="li li--yes"><svg class="i"><use href="#i-check"></use></svg><span><strong>10 GB NVMe</strong> High-Speed Mail Storage</span></li>
+              <li class="li li--yes"><svg class="i"><use href="#i-check"></use></svg><span><strong>5 Free Department Aliases</strong> &amp; Forwarders</span></li>
+              <li class="li li--yes"><svg class="i"><use href="#i-check"></use></svg><span>Syncs with iPhone, Android Gmail &amp; Outlook</span></li>
+              <li class="li li--yes"><svg class="i"><use href="#i-check"></use></svg><span>Pre-configured SPF, DKIM &amp; DMARC</span></li>
+              <li class="li li--yes"><svg class="i"><use href="#i-check"></use></svg><span>Free Domain Forwarding to FB / LinkedIn</span></li>
+            </ul>
+
+            <button type="button" class="btn btn-ghost btn-block open-drawer" data-plan="Starter .LK">
+              <span>Choose Starter .LK</span>
+              <svg class="i arrow"><use href="#i-arrow-r"></use></svg>
+            </button>
+          </div>
+
+          <!-- Tier 2: Business .LK (Featured) -->
+          <div class="price price--featured reveal" style="--d: 1">
+            <div class="price__flag"><i></i><span>Most Popular for Companies</span></div>
+            <div class="price__name">Business .LK</div>
+            <div class="price__desc">For growing SMEs, retail stores, villas, exporters &amp; creative agencies.</div>
+
+            <div class="price__amount">
+              <span class="price__num tnum" data-price-lkr-1="Rs. 14,900" data-price-lkr-2="Rs. 12,650" data-price-usd-1="$49" data-price-usd-2="$42">Rs. 14,900</span>
+              <span class="price__per">/ year</span>
+            </div>
+            <div class="price__note">Covers up to 10 staff mailboxes for the entire year</div>
+
+            <div class="price__domain">
+              <svg class="i"><use href="#i-shield"></use></svg>
+              <span>Includes FREE <strong>.lk</strong> Domain + Free Mailbox Migration</span>
+            </div>
+
+            <ul class="price__list">
+              <li class="li li--yes"><svg class="i"><use href="#i-check"></use></svg><span><strong>10 Professional Mailboxes</strong> for your team</span></li>
+              <li class="li li--yes"><svg class="i"><use href="#i-check"></use></svg><span><strong>50 GB NVMe</strong> Shared High-Speed Storage</span></li>
+              <li class="li li--yes"><svg class="i"><use href="#i-check"></use></svg><span><strong>Unlimited Aliases</strong> (sales@, accounts@, hr@)</span></li>
+              <li class="li li--yes"><svg class="i"><use href="#i-check"></use></svg><span>Custom Branded Webmail (mail.yourcompany.lk)</span></li>
+              <li class="li li--yes"><svg class="i"><use href="#i-check"></use></svg><span>High-Reputation SmartHost Relay (99.98% Inbox)</span></li>
+              <li class="li li--yes"><svg class="i"><use href="#i-check"></use></svg><span><strong>Priority WhatsApp &amp; Phone Support in Colombo</strong></span></li>
+            </ul>
+
+            <button type="button" class="btn btn-primary btn-block open-drawer" data-plan="Business .LK">
+              <span>Choose Business .LK</span>
+              <svg class="i arrow"><use href="#i-arrow-r"></use></svg>
+            </button>
+          </div>
+
+          <!-- Tier 3: Organization .LK -->
+          <div class="price reveal" style="--d: 2">
+            <div class="price__name">Organization .LK</div>
+            <div class="price__desc">For larger enterprises, schools, legal chambers, factories &amp; multi-branch firms.</div>
+
+            <div class="price__amount">
+              <span class="price__num tnum" data-price-lkr-1="Rs. 29,900" data-price-lkr-2="Rs. 25,400" data-price-usd-1="$99" data-price-usd-2="$84">Rs. 29,900</span>
+              <span class="price__per">/ year</span>
+            </div>
+            <div class="price__note">All-inclusive organization tier with enterprise SLA</div>
+
+            <div class="price__domain">
+              <svg class="i"><use href="#i-shield"></use></svg>
+              <span>Includes FREE <strong>.lk</strong> Domain + Automated Daily Backups</span>
+            </div>
+
+            <ul class="price__list">
+              <li class="li li--yes"><svg class="i"><use href="#i-check"></use></svg><span><strong>50 Professional Mailboxes</strong> included</span></li>
+              <li class="li li--yes"><svg class="i"><use href="#i-check"></use></svg><span><strong>200 GB NVMe</strong> Enterprise Mail Storage</span></li>
+              <li class="li li--yes"><svg class="i"><use href="#i-check"></use></svg><span><strong>30-Day Automated Offsite Mail Backups</strong></span></li>
+              <li class="li li--yes"><svg class="i"><use href="#i-check"></use></svg><span>Shared Team Calendars, Contacts &amp; Global Directory</span></li>
+              <li class="li li--yes"><svg class="i"><use href="#i-check"></use></svg><span>Admin Console for User Addition &amp; Deprovisioning</span></li>
+              <li class="li li--yes"><svg class="i"><use href="#i-check"></use></svg><span>Dedicated Account Engineer at Peek Hosting</span></li>
+            </ul>
+
+            <button type="button" class="btn btn-ghost btn-block open-drawer" data-plan="Organization .LK">
+              <span>Choose Organization .LK</span>
+              <svg class="i arrow"><use href="#i-arrow-r"></use></svg>
+            </button>
+          </div>
+        </div>
+
+        <div class="pricing__foot reveal">
+          Need more than 50 mailboxes or hybrid setup with on-premise servers? Call our enterprise team on <strong>+94 11 711 2244</strong>.
+        </div>
+      </div>
+    </section>
+
+    <!-- .LK DOMAIN ELIGIBILITY & REGISTRY GUIDELINES -->
+    <section class="section" id="rules">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="eyebrow">LK DOMAIN REGISTRY RULES</span>
+          <h2 class="h2">Transparent requirements. <span class="accent">Zero confusing paperwork.</span></h2>
+          <p class="lead">You do not need a registered company (BR) to get your own <code>.lk</code> address. We file your application directly with the LK Domain Registry on your behalf.</p>
+        </div>
+
+        <div class="table-wrap reveal">
+          <table class="table">
+            <thead>
+              <tr>
+                <th scope="col">Domain Extension</th>
+                <th scope="col">Ideal Use Case</th>
+                <th scope="col">Required Document</th>
+                <th scope="col">Approval Timeline</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td data-label="Extension"><span class="ext">.lk</span></td>
+                <td data-label="Use Case"><strong>Top-level standard</strong> for Sri Lankan businesses, freelancers, brands &amp; consultants.</td>
+                <td data-label="Document">Sri Lankan National ID (<strong>NIC</strong>) or Business Registration (<strong>BR</strong>).</td>
+                <td data-label="Timeline"><span class="pill pill--green">2 – 6 Working Hours</span></td>
+              </tr>
+              <tr>
+                <td data-label="Extension"><span class="ext">.com.lk</span></td>
+                <td data-label="Use Case">Commercial entities, registered companies, retail brands &amp; partnerships.</td>
+                <td data-label="Document">Business Registration (<strong>BR</strong>) certificate copy or Owner NIC.</td>
+                <td data-label="Timeline"><span class="pill pill--green">2 – 6 Working Hours</span></td>
+              </tr>
+              <tr>
+                <td data-label="Extension"><span class="ext">.hotel.lk</span></td>
+                <td data-label="Use Case">Boutique villas, beach resorts, surf retreats &amp; homestays across the island.</td>
+                <td data-label="Document">SLTDA registration, Tourist Board approval or Company BR.</td>
+                <td data-label="Timeline"><span class="pill">Same Business Day</span></td>
+              </tr>
+              <tr>
+                <td data-label="Extension"><span class="ext">.org.lk</span></td>
+                <td data-label="Use Case">Non-profit societies, charity foundations, sports clubs &amp; trade bodies.</td>
+                <td data-label="Document">Registered Society Certificate or Official Letterhead request.</td>
+                <td data-label="Timeline"><span class="pill">Same Business Day</span></td>
+              </tr>
+              <tr>
+                <td data-label="Extension"><span class="ext">.edu.lk</span></td>
+                <td data-label="Use Case">Schools, vocational academies, institutes &amp; higher education colleges.</td>
+                <td data-label="Document">Ministry of Education registration or Institute certification.</td>
+                <td data-label="Timeline"><span class="pill">1 – 2 Business Days</span></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="table-note reveal">
+          * Already own your <code>.lk</code> domain with NIC.lk or another registrar? No problem—we connect your MX and DKIM records free of charge and credit your next renewal.
+        </div>
+      </div>
+    </section>
+
+    <!-- CUSTOMER STORIES -->
+    <section class="section section--tint" id="stories">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="eyebrow">FIELD TESTIMONIALS</span>
+          <h2 class="h2">Real founders. <span class="accent">Real Sri Lankan results.</span></h2>
+        </div>
+
+        <div class="stories">
+          <!-- Featured Story -->
+          <article class="quote quote--big reveal">
+            <div class="quote__mark" aria-hidden="true">“</div>
+            <p class="quote__text">
+              When we pitched specialty Ceylon cinnamon consignments to a major buyer in Hamburg, our quotations from an old @gmail.com address kept getting ignored. Within two hours of ordering ProMail.lk, Peek Hosting had our .lk domain approved and 6 mailboxes synced to our mobile phones. We closed that export deal three weeks later.
+            </p>
+            <div class="quote__who">
+              <div class="quote__avatar">DJ</div>
+              <div>
+                <span class="quote__name">Dilhan Jayawardena</span>
+                <span class="quote__role">Director, Ceylon Spice &amp; Leaf Exports (Pvt) Ltd</span>
+              </div>
+              <span class="quote__addr">dilhan@ceylonleaf.lk</span>
+            </div>
+          </article>
+
+          <!-- Story 2 -->
+          <article class="quote reveal">
+            <p class="quote__text">
+              “We were paying over Rs. 160,000 every year in USD for 8 Google Workspace seats just to send architectural drawings. ProMail.lk cut our bill by 88%, gives us official LKR tax invoices, and local support engineers we can call in Colombo.”
+            </p>
+            <div class="quote__who">
+              <div class="quote__avatar">NS</div>
+              <div>
+                <span class="quote__name">Nadine Samarasinghe</span>
+                <span class="quote__role">Principal Architect, Studio Fort Galle</span>
+              </div>
+              <span class="quote__addr">nadine@studiofort.lk</span>
+            </div>
+          </article>
+
+          <!-- Story 3 -->
+          <article class="quote reveal">
+            <p class="quote__text">
+              “We don’t even have a full website yet—just our Instagram and direct booking links. ProMail gave us reservations@ahangamavilla.lk and forwards our domain straight to our Instagram page. European guests take our villa much more seriously.”
+            </p>
+            <div class="quote__who">
+              <div class="quote__avatar">RS</div>
+              <div>
+                <span class="quote__name">Roshan &amp; Chiara de Silva</span>
+                <span class="quote__role">Co-Owners, Ahangama Boutique Villa</span>
+              </div>
+              <span class="quote__addr">stay@ahangamavilla.lk</span>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ SECTION -->
+    <section class="section" id="faq">
+      <div class="container faq">
+        <div class="faq__intro reveal">
+          <span class="eyebrow">COMMON QUESTIONS</span>
+          <h2 class="h2">Everything you need to know about <span class="accent">.LK Business Email.</span></h2>
+          <p class="lead">Straightforward answers without sales hype or technical jargon.</p>
+
+          <div class="help">
+            <span class="help__title">NEED IMMEDIATE ASSISTANCE?</span>
+            <a href="tel:+94117112244" class="help__line">
+              <svg class="i"><use href="#i-phone"></use></svg>
+              <span>Hotline: +94 11 711 2244</span>
+            </a>
+            <div class="help__hours">
+              <svg class="i"><use href="#i-clock"></use></svg>
+              <span>Monday – Saturday: 8:30 AM – 7:00 PM</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="faq__list reveal">
+          <!-- FAQ 1 -->
+          <div class="faq__item is-open">
+            <h3>
+              <button type="button" class="faq__q" aria-expanded="true">
+                <span>Can I register a .LK domain with my personal National ID (NIC) if I don't have a Business Registration (BR) yet?</span>
+                <span class="faq__icon" aria-hidden="true"></span>
+              </button>
+            </h3>
+            <div class="faq__a">
+              <div>
+                <p>
+                  Yes, absolutely. Under LK Domain Registry rules, sole proprietors, freelancers, and individuals can register a standard <code>.lk</code> or <code>.com.lk</code> domain using their personal Sri Lankan National Identity Card (NIC). You don't need to wait until your BR is issued. We file your application directly and assist with any category checks.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- FAQ 2 -->
+          <div class="faq__item">
+            <h3>
+              <button type="button" class="faq__q" aria-expanded="false">
+                <span>Do I need a website to start using my professional .LK email?</span>
+                <span class="faq__icon" aria-hidden="true"></span>
+              </button>
+            </h3>
+            <div class="faq__a">
+              <div>
+                <p>
+                  No website is required. ProMail.lk was created specifically for the thousands of Sri Lankan businesses that need a credible corporate email address right now without paying for a website. We can also configure your <code>www.yourdomain.lk</code> web address to automatically redirect visitors to your Facebook page, Instagram profile, or LinkedIn catalog for free.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- FAQ 3 -->
+          <div class="faq__item">
+            <h3>
+              <button type="button" class="faq__q" aria-expanded="false">
+                <span>Who legally owns my .LK domain name?</span>
+                <span class="faq__icon" aria-hidden="true"></span>
+              </button>
+            </h3>
+            <div class="faq__a">
+              <div>
+                <p>
+                  <strong>You own it 100%.</strong> Peek Hosting submits your domain application with your personal name or company name listed as the official legal Registrant at the LK Domain Registry. You are the sole administrative owner and can point your domain to any website host or server at any time.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- FAQ 4 -->
+          <div class="faq__item">
+            <h3>
+              <button type="button" class="faq__q" aria-expanded="false">
+                <span>Can I use my @yourdomain.lk email inside the Gmail app or Microsoft Outlook?</span>
+                <span class="faq__icon" aria-hidden="true"></span>
+              </button>
+            </h3>
+            <div class="faq__a">
+              <div>
+                <p>
+                  Yes. ProMail.lk supports encrypted IMAP, SMTP, POP3, CalDAV, and CardDAV protocols. You can send and receive emails inside Apple Mail on Mac and iPhone, the Gmail mobile app on Android, Microsoft Outlook for Windows, and Mozilla Thunderbird—or log in via our modern, ad-free webmail portal at <code>mail.yourdomain.lk</code>.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- FAQ 5 -->
+          <div class="faq__item">
+            <h3>
+              <button type="button" class="faq__q" aria-expanded="false">
+                <span>What if I already bought my .LK domain directly from NIC.lk?</span>
+                <span class="faq__icon" aria-hidden="true"></span>
+              </button>
+            </h3>
+            <div class="faq__a">
+              <div>
+                <p>
+                  If you already own your domain, simply choose the "I already own this domain" option during checkout. Our engineers will configure your mail exchange (MX) and DKIM security records in under 10 minutes without touching your existing website, and we will credit your domain fee toward extra storage or an extended subscription.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FINAL CALL TO ACTION -->
+    <section class="cta">
+      <div class="container">
+        <div class="cta__box reveal">
+          <div>
+            <div class="cta__addr-row">
+              <span class="cta__addr" id="ctaAddressPreview">kasun@ceyloncraft.lk</span>
+              <button type="button" class="cta__copy" id="ctaCopyBtn">
+                <svg class="i"><use href="#i-copy"></use></svg>
+                <span>Copy</span>
+              </button>
+            </div>
+            <h2 class="cta__title">
+              Ready to give your business the <span class="accent">identity it deserves?</span>
+            </h2>
+          </div>
+
+          <div class="cta__actions">
+            <button type="button" class="btn btn-light btn-lg open-drawer" data-plan="Business .LK">
+              <span>Claim Your .LK Email Now</span>
+              <svg class="i arrow"><use href="#i-arrow-r"></use></svg>
+            </button>
+            <a href="tel:+94117112244" class="cta__phone">Or call our Colombo desk: +94 11 711 2244</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- CORPORATE FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__grid">
+        <div class="footer__about">
+          <a href="#" class="logo">
+            <svg viewBox="0 0 32 32" fill="none" style="width: 28px; height: 28px;">
+              <rect width="32" height="32" rx="7" fill="#1F48D6"/>
+              <path d="M7 10L16 16.5L25 10" stroke="white" stroke-width="2" stroke-linecap="round"/>
+              <rect x="7" y="10" width="18" height="13" rx="2" stroke="white" stroke-width="2"/>
+            </svg>
+            <span class="logo__text">ProMail<span class="logo__tld">.lk</span></span>
+          </a>
+          <p>
+            Official .LK domain registration bundled with enterprise-grade business email. Built, operated, and supported in Sri Lanka by <strong>Peek Hosting (Pvt) Ltd</strong>.
+          </p>
+          <div class="footer__contact">
+            <div>Colombo Hotline: <a href="tel:+94117112244">+94 11 711 2244</a></div>
+            <div>WhatsApp Desk: <a href="https://wa.me/94777112244" target="_blank" rel="noopener">+94 77 711 2244</a></div>
+          </div>
+        </div>
+
+        <div>
+          <h4>Service</h4>
+          <ul>
+            <li><a href="#how" class="flink">How Provisioning Works</a></li>
+            <li><a href="#features" class="flink">The .LK Advantage</a></li>
+            <li><a href="#compare" class="flink">Savings Calculator</a></li>
+            <li><a href="#pricing" class="flink">Annual Bundles</a></li>
+            <li><a href="#rules" class="flink">NIC &amp; BR Rules</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4>.LK Domains</h4>
+          <ul>
+            <li><a href="#rules" class="flink">.lk Top-Level Domains</a></li>
+            <li><a href="#rules" class="flink">.com.lk for Companies</a></li>
+            <li><a href="#rules" class="flink">.hotel.lk for Villas</a></li>
+            <li><a href="#rules" class="flink">.org.lk for Societies</a></li>
+            <li><a href="#rules" class="flink">.edu.lk for Academies</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4>Customer Care</h4>
+          <ul>
+            <li><a href="https://mail.promail.lk" target="_blank" rel="noopener" class="flink">Webmail Sign In</a></li>
+            <li><a href="https://www.peekhosting.com" target="_blank" rel="noopener" class="flink">Peek Hosting Portal</a></li>
+            <li><a href="#faq" class="flink">Outlook &amp; Mobile Setup</a></li>
+            <li><a href="tel:+94117112244" class="flink">Trilingual Support</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer__bottom">
+        <span>© 2026 ProMail.lk — A flagship brand of Peek Hosting (Pvt) Ltd, Sri Lanka. All rights reserved.</span>
+        <div class="footer__legal">
+          <span>Supported: LankaQR • Visa • Mastercard • Sampath Vishwa • Bank Transfer</span>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- RESERVATION & CHECKOUT DRAWER MODAL -->
+  <div class="drawer" id="orderDrawer" aria-hidden="true">
+    <div class="drawer__scrim" id="drawerScrim"></div>
+    <div class="drawer__panel" role="dialog" aria-modal="true" aria-labelledby="drawerTitle">
+      <div class="drawer__head">
+        <div>
+          <span class="eyebrow" style="font-size: 0.72rem;">PEEK HOSTING CONCIERGE PROVISIONING</span>
+          <h2 class="drawer__title" id="drawerTitle">Reserve Your .LK Email Bundle</h2>
+          <div class="drawer__sub">Ready-to-use mailboxes delivered in 60 seconds.</div>
+        </div>
+        <button type="button" class="icon-btn" id="drawerCloseBtn" aria-label="Close drawer">
+          <svg class="i"><use href="#i-x"></use></svg>
+        </button>
+      </div>
+
+      <form class="drawer__form" id="drawerForm" novalidate>
+        <div class="drawer__body">
+          <div class="drawer__fields">
+            <!-- Selected address summary -->
+            <div class="summary">
+              <span class="summary__k">RESERVED EMAIL ADDRESS &amp; DOMAIN:</span>
+              <div class="summary__addr" id="drawerAddressDisplay">kasun@ceyloncraft.lk</div>
+              <div class="summary__row">
+                <span>Official Domain:</span>
+                <strong id="drawerDomainDisplay">ceyloncraft.lk</strong>
+              </div>
+              <div class="summary__row">
+                <span>Selected Plan:</span>
+                <strong id="drawerPlanPriceDisplay">Business .LK (Rs. 14,900 / yr)</strong>
+              </div>
+            </div>
+
+            <!-- Tier Selection -->
+            <div class="field">
+              <label for="drawerPlanSelect">Choose Bundle Plan</label>
+              <select id="drawerPlanSelect" class="select">
+                <option value="Starter .LK">Starter .LK — 2 Mailboxes + Free .LK Domain (Rs. 6,900/yr)</option>
+                <option value="Business .LK" selected>Business .LK — 10 Mailboxes + Free .LK Domain (Rs. 14,900/yr)</option>
+                <option value="Organization .LK">Organization .LK — 50 Mailboxes + Free .LK Domain (Rs. 29,900/yr)</option>
+              </select>
+            </div>
+
+            <!-- Registration Type Radio Group -->
+            <fieldset class="field">
+              <legend>LK Domain Registration Basis</legend>
+              <div class="radios">
+                <label class="radio">
+                  <input type="radio" name="regType" value="nic" checked />
+                  <span>
+                    <b>Personal NIC</b>
+                    <small>Individual / Sole Proprietor</small>
+                  </span>
+                </label>
+                <label class="radio">
+                  <input type="radio" name="regType" value="br" />
+                  <span>
+                    <b>Company BR</b>
+                    <small>Registered Entity / Pvt Ltd</small>
+                  </span>
+                </label>
+                <label class="radio">
+                  <input type="radio" name="regType" value="existing" />
+                  <span>
+                    <b>I Own This</b>
+                    <small>Existing .LK Domain</small>
+                  </span>
+                </label>
+              </div>
+            </fieldset>
+
+            <!-- Applicant Name -->
+            <div class="field" id="fieldNameWrap">
+              <label for="drawerName">Your Full Name &amp; Business Name</label>
+              <input type="text" id="drawerName" class="input" placeholder="e.g. Kasun Perera — Ceylon Craft (Pvt) Ltd" required />
+              <span class="field__err">Please enter your name or company name.</span>
+            </div>
+
+            <!-- WhatsApp Number -->
+            <div class="field" id="fieldPhoneWrap">
+              <label for="drawerPhone">WhatsApp / Mobile Number (for instant setup credentials)</label>
+              <input type="tel" id="drawerPhone" class="input" placeholder="077 123 4567" required />
+              <span class="field__err">Please provide a valid Sri Lankan mobile number.</span>
+            </div>
+
+            <!-- Payment Method -->
+            <div class="field">
+              <label for="drawerPayment">Preferred Local Payment Method</label>
+              <select id="drawerPayment" class="select">
+                <option value="lankaqr">LankaQR / Visa / Mastercard (Instant PayHere LKR)</option>
+                <option value="bank">Commercial Bank / Sampath / HNB Direct Transfer</option>
+              </select>
+            </div>
+          </div>
+
+          <!-- Success State -->
+          <div class="success" id="drawerSuccessState">
+            <svg class="success__icon" viewBox="0 0 52 52">
+              <circle cx="26" cy="26" r="23" />
+              <path d="M16 27 L23 34 L36 19" />
+            </svg>
+            <h3>Reservation Locked!</h3>
+            <p>
+              Our Colombo provisioning team has queued <strong id="confirmedEmailText">kasun@ceyloncraft.lk</strong> and sent your direct activation link to your WhatsApp number.
+            </p>
+            <button type="button" class="btn btn-primary" id="drawerDoneBtn">Done</button>
+          </div>
+        </div>
+
+        <div class="drawer__foot">
+          <button type="submit" class="btn btn-primary btn-block btn-lg" id="drawerSubmitBtn">
+            <span>Complete .LK Domain &amp; Email Reservation</span>
+            <svg class="i arrow"><use href="#i-arrow-r"></use></svg>
+          </button>
+          <div class="drawer__fine">
+            Official LKR Corporate Tax Invoice provided • Backed by Peek Hosting SLA
+          </div>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <!-- Toast Notification -->
+  <div class="toast" id="toast" role="status" aria-live="polite">
+    <svg class="i"><use href="#i-check"></use></svg>
+    <span id="toastMsg">Email address copied to clipboard</span>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
